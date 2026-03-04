@@ -17,8 +17,7 @@ mobileBtnMenu.onclick = () => {
 
 let skillsColors = ["#2c5eb0", "#ca2821", "#2c5eb0", "#1e9d51", "#4ba5c1", "#e1ac09", "#2c5eb0", "#7c43ba"];
 
-let skills = fetch(`https://sheikhelorderback-production-2477.up.railway.app/
-api/showSkills`)
+let skills = fetch(`https://ample-reprieve-production-5700.up.railway.app/api/showSkills`)
   .then(response => {
     return response.json();
   }).then(json => {
@@ -62,7 +61,7 @@ function createSkill(i, json) {
 }
 
 
-let projects = fetch(`https://sheikhelorderback-production-2477.up.railway.app//api/showProjects`)
+let projects = fetch(`https://ample-reprieve-production-5700.up.railway.app/api/showProjects`)
   .then(response => {
     return response.json();
   }).then(json => {
@@ -215,7 +214,7 @@ emailBtn.addEventListener("click", () => {
     formData.append(input.name, input.value);
   });
 
-  fetch("https://sheikhelorderback-production-2477.up.railway.app//api/contact",
+  fetch("ample-reprieve-production-5700.up.railway.app/api/contact",
     {
       method: 'POST',
       body: formData
@@ -232,7 +231,7 @@ emailBtn.addEventListener("click", () => {
         p.classList.add("d-none");
       },3000)
   })
-  fetch("https://sheikhelorderback-production-2477.up.railway.app//api/recieve",
+  fetch("ample-reprieve-production-5700.up.railway.app/api/recieve",
     {
       method: 'POST',
       body: formData
@@ -250,4 +249,5 @@ emailBtn.addEventListener("click", () => {
       },3000)
   })
 })
+
 
