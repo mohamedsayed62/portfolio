@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootsrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- icons css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Mohamed Abdeltwab</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <h3 class="navbar-brand p-0 m-0">PORTFOLIO</h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars bars"></i>
+          </button>
+          <div class="collapse navbar-collapse transation text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#skills">skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#projects">projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">contact</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://github.com/mohamedsayed62?tab=repositories">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <section class="overflow-hidden" id="home">
+
+      <div class="container mt-md-5 mt-0">
+        <div class="main row flex-md-row flex-column-reverse">
+          <div class="col-lg-6 text-center text-md-start scroll">
+            <h1 class=""><span class="text-light ">Hi, I'm</span> <br> Mohamed Abdeltwab</h1>
+            <p class="text-light fw-bold">Backend Developer | <span class="text-danger">Laravel</span> </p>
+
+            <p class="text-light opacity-75 mt-3">building modern web applications, passionate about learning new technologies and currently practicing on projects with laravel & js, learning React.js</p>
+
+            <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+              <a href="https://wa.me/+201556276618" class="concat-btns btn view-projects-btn text-light bg-success fw-bold border-2 border-success">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" class="concat-btns btn view-projects-btn text-light bg-primary fw-bold border-2 border-primary">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/mohamedsayed62?tab=repositories" class="concat-btns btn view-projects-btn text-light bg-danger fw-bold border-2 border-danger">
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center scroll">
+            <img src="assets/img/personalImage.jpg" alt="" class="me-md-auto me-0 border-primary">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="skills" id="skills">
+      <div class="container mt-5">
+        <div class="special-heading mx-auto text-center text-light fw-bold mb-5">
+          <span class="text-info">TECH STACK</span>
+          <h3>Tools & Technologies</h3>
+        </div>
+
+        <div class="skills-box d-flex flex-wrap justify-content-center align-items-center gap-3">
+          
+        </div>
+      </div>
+
+    </section>
+
+    <section class="projects p-5" id="projects">
+      <div class="container">
+        <div class="special-heading mx-auto text-center text-light fw-bold mb-5">
+          <span class="text-info">PORTFOLIO</span>
+          <h3>Recent Projects</h3>
+        </div>
+
+        <div class="row row-projects gap-4">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="special-heading mx-auto text-center text-light fw-bold mb-5">
+          <span class="text-info">Get in Touch</span>
+          <h3>Let's Work Together</h3>
+        </div>
+
+        <div class="box w-75 mx-auto rounded-3 scroll">
+          <div class="d-md-flex justify-content-between align-items-center gap-5">
+            <label class="w-100">
+              <span class="text-light ">Name</span>
+              <input class="w-100 ipt" type="text" id="name" name="name" placeholder="Mohamed Abdeltwab">
+            </label>
+            <label class="w-100 my-3">
+              <span class="text-light">Email</span>
+              <input class="w-100 ipt" type="email" id="mail" name="email" placeholder="Mohamed Abdeltwab@">
+            </label>
+          </div>
+          <label class="w-100">
+            <span class="text-light">Message</span>
+            <textarea name="message" id="message" placeholder="Your Message" class="w-100 ipt"></textarea>
+          </label>
+
+          <button class="d-block mt-3 btn btn-primary mx-auto msg-btn">Send Message</button>
+          <p class="d-none hidden mb-0 mt-2 p-0"></p>
+
+          <div class="d-flex justify-content-center gap-3 mt-4">
+              <a href="https://wa.me/+201556276618" class="concat-btns btn view-projects-btn text-light bg-success fw-bold border-2 border-success">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" class="concat-btns btn view-projects-btn text-light bg-primary fw-bold border-2 border-primary">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-3 border-1 border-top border-light">
+      <p class="text-light fw-bold d-flex align-items-center justify-content-center m-0">made with<span class="text-danger ms-1">Mohamed Abdeltwab</span></p>
+    </footer>
+
+    <script src="assets/js/handle-scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
