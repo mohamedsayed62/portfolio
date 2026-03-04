@@ -214,7 +214,7 @@ emailBtn.addEventListener("click", () => {
     formData.append(input.name, input.value);
   });
 
-  fetch("ample-reprieve-production-5700.up.railway.app/api/contact",
+  fetch("https://ample-reprieve-production-5700.up.railway.app/api/contact",
     {
       method: 'POST',
       body: formData
@@ -231,7 +231,7 @@ emailBtn.addEventListener("click", () => {
         p.classList.add("d-none");
       },3000)
   })
-  fetch("ample-reprieve-production-5700.up.railway.app/api/recieve",
+  fetch("https://ample-reprieve-production-5700.up.railway.app/api/recieve",
     {
       method: 'POST',
       body: formData
@@ -249,5 +249,6 @@ emailBtn.addEventListener("click", () => {
       },3000)
   })
 })
+
 
 
