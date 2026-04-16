@@ -17,7 +17,13 @@ mobileBtnMenu.onclick = () => {
 
 let skillsColors = ["#2c5eb0", "#ca2821", "#2c5eb0", "#1e9d51", "#4ba5c1", "#e1ac09", "#2c5eb0", "#7c43ba"];
 
-let skills = fetch(`https://mohamed-abdeltwab-portfolio.free.nf/api/showSkills`)
+let skills = fetch(`https://mohamed-abdeltwab-portfolio.free.nf/api/showSkills`, {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    // 'Authorization': 'Bearer ...' if needed
+  }
+})
   .then(response => {
     return response.json();
   }).then(json => {
