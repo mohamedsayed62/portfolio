@@ -3,164 +3,359 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- bootsrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- icons css -->
     <link rel="stylesheet" href="assets/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Mohamed Abdeltwab</title>
   </head>
   <body>
+
+    <!-- Animated background grid -->
+    <div class="bg-grid" aria-hidden="true"></div>
+
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <h3 class="navbar-brand p-0 m-0">PORTFOLIO</h3>
+          <h3 class="navbar-brand p-0 m-0">
+            <span class="brand-dot"></span>PORTFOLIO
+          </h3>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars bars"></i>
           </button>
-          <div class="collapse navbar-collapse transation text-center" id="navbarSupportedContent">
+          <div class="navbar-collapse text-center" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#skills">skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#projects">projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">contact</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://github.com/mohamedsayed62?tab=repositories">
+            <ul class="navbar-nav ms-3 mb-2 mb-lg-0">
+              <li class="nav-item mx-auto text-center">
+                <a class="nav-link nav-icon" href="https://github.com/mohamedsayed62?tab=repositories" target="_blank" title="GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/">
+              <li class="nav-item mx-auto text-center">
+                <a class="nav-link nav-icon" href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" target="_blank" title="LinkedIn">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
             </ul>
-
+          </div>
         </div>
       </nav>
     </header>
 
-    <section class="overflow-hidden" id="home">
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero-section overflow-hidden" id="home">
+      <div class="container">
+        <div class="main row flex-md-row flex-column-reverse align-items-center">
 
-      <div class="container mt-md-5 mt-0">
-        <div class="main row flex-md-row flex-column-reverse">
           <div class="col-lg-6 text-center text-md-start scroll">
-            <h1 class=""><span class="text-light ">Hi, I'm</span> <br> Mohamed Abdeltwab</h1>
-            <p class="text-light fw-bold">Backend Developer | <span class="text-danger">Laravel</span> </p>
-
-            <p class="text-light opacity-75 mt-3">building modern web applications, passionate about learning new technologies and currently practicing on projects with laravel & js, learning React.js</p>
-
-            <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
-              <a href="https://wa.me/+201556276618" class="concat-btns btn view-projects-btn text-light bg-success fw-bold border-2 border-success">
+            <p class="greeting-tag">👋 Hello, World!</p>
+            <h1>
+              <span class="text-light name-label">I'm</span><br>
+              Mohamed<br>
+              <span class="name-highlight">Abdeltwab</span>
+            </h1>
+            <p class="role-badge">
+              Backend Developer &nbsp;·&nbsp; <span class="text-danger fw-bold">Laravel</span>
+            </p>
+            <p class="hero-desc">
+              Backend Laravel Developer with hands-on experience building modern web applications using PHP and 
+Laravel. Skilled in developing RESTful APIs and creating responsive user interfaces using HTML, CSS, 
+JavaScript, Bootstrap, and Tailwind CSS. Passionate about continuous 
+learning and building scalable, efficient web solutions.
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-4">
+              <a href="https://wa.me/+201556276618" class="social-fab bg-success" title="WhatsApp" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" class="concat-btns btn view-projects-btn text-light bg-primary fw-bold border-2 border-primary">
+              <a href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" class="social-fab bg-primary" title="LinkedIn" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com/mohamedsayed62?tab=repositories" class="concat-btns btn view-projects-btn text-light bg-danger fw-bold border-2 border-danger">
+              <a href="https://github.com/mohamedsayed62?tab=repositories" class="social-fab social-fab-dark" title="GitHub" target="_blank">
                 <i class="fa-brands fa-github"></i>
               </a>
-
             </div>
           </div>
 
           <div class="col-lg-6 text-center scroll">
-            <img src="assets/img/personalImage.jpg" alt="" class="me-md-auto me-0 border-primary">
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <section class="skills" id="skills">
-      <div class="container mt-5">
-        <div class="special-heading mx-auto text-center text-light fw-bold mb-5">
-          <span class="text-info">TECH STACK</span>
-          <h3>Tools & Technologies</h3>
-        </div>
-
-        <div class="skills-box d-flex flex-wrap justify-content-center align-items-center gap-3">
-          
-        </div>
-      </div>
-
-    </section>
-
-    <section class="projects p-5" id="projects">
-      <div class="container">
-        <div class="special-heading mx-auto text-center text-light fw-bold mb-5">
-          <span class="text-info">PORTFOLIO</span>
-          <h3>Recent Projects</h3>
-        </div>
-
-        <div class="row row-projects gap-4">
-
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="special-heading mx-auto text-center text-light fw-bold mb-5">
-          <span class="text-info">Get in Touch</span>
-          <h3>Let's Work Together</h3>
-        </div>
-
-        <div class="box w-75 mx-auto rounded-3 scroll">
-          <div class="d-md-flex justify-content-between align-items-center gap-5">
-            <label class="w-100">
-              <span class="text-light ">Name</span>
-              <input class="w-100 ipt" type="text" id="name" name="name" placeholder="Mohamed Abdeltwab">
-            </label>
-            <label class="w-100 my-3">
-              <span class="text-light">Email</span>
-              <input class="w-100 ipt" type="email" id="mail" name="email" placeholder="Mohamed Abdeltwab@">
-            </label>
-          </div>
-          <label class="w-100">
-            <span class="text-light">Message</span>
-            <textarea name="message" id="message" placeholder="Your Message" class="w-100 ipt"></textarea>
-          </label>
-
-          <button type="submit" class="d-block mt-3 btn btn-primary mx-auto msg-btn">Send Message</button>
-          <p class="d-none hidden mb-0 mt-2 p-0"></p>
-
-          <div class="d-flex justify-content-center gap-3 mt-4">
-              <a href="https://wa.me/+201556276618" class="concat-btns btn view-projects-btn text-light bg-success fw-bold border-2 border-success">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" class="concat-btns btn view-projects-btn text-light bg-primary fw-bold border-2 border-primary">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-
+            <div class="hero-img-wrapper">
+              <div class="hero-img-glow"></div>
+              <img src="assets/img/personalImage.jpg" alt="Mohamed Abdeltwab" class="hero-img">
+              <div class="hero-img-badge">
+                <span class="badge-dot"></span> Available for work
+              </div>
             </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <footer class="p-3 border-1 border-top border-light">
-      <p class="text-light fw-bold d-flex align-items-center justify-content-center m-0">made with<span class="text-danger ms-1">Mohamed Abdeltwab</span></p>
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading text-center mb-5 scroll">
+          <span class="section-tag">TECH STACK</span>
+          <h2>Skills & Technologies</h2>
+        </div>
+
+        <div class="skills-grid scroll">
+
+          <!-- Backend -->
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#FF2D20">
+              <i class="fa-brands fa-laravel"></i>
+            </div>
+            <span>Laravel</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#777BB4">
+              <i class="fa-brands fa-php"></i>
+            </div>
+            <span>PHP</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#4479A1">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <span>MySQL</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#00C7B7">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <span>RESTful APIs</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#00B894">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <span>MVC Pattern</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#6C5CE7">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <span>Authentication</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#E17055">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <span>Authorization</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#0984E3">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <span>Mail</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#FDCB6E">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <span>Queue</span>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#E34F26">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <span>HTML5</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#1572B6">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <span>CSS3</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#F7DF1E">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#7952B3">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#38BDF8">
+              <i class="fa-solid fa-wind"></i>
+            </div>
+            <span>Tailwind CSS</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#2ECC71">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <span>Responsive Design</span>
+          </div>
+
+          <!-- Tools -->
+
+          <div class="skill-card">
+            <div class="skill-icon" style="color:#181717">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <span>GitHub</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading text-center mb-5 scroll">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card scroll">
+            <div class="project-card-top">
+              <div class="project-number">01</div>
+
+              <div class="project-links">
+                <a href="https://github.com/mohamedsayed62/sheikhElorderBack.git" target="_blank" title="Backend Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://github.com/mohamedsayed62/sheikhElorder.git" target="_blank" title="Frontend Code">
+                  <i class="fa-solid fa-code"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>Order Between Friends System</h3>
+
+            <p>
+              Full-stack web application for managing group orders between friends with a modern UI and organized backend architecture.
+            </p>
+
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Tailwind CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card scroll">
+            <div class="project-card-top">
+              <div class="project-number">02</div>
+
+              <div class="project-links">
+                <a href="https://github.com/mohamedsayed62/reservetion_book.git" target="_blank" title="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>Book Reservation System</h3>
+
+            <p>
+              Smart student reservation system with automated code generation, email notifications, authentication, and admin management dashboard.
+            </p>
+
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>MySQL</span>
+              <span>Mail</span>
+              <span>Queue</span>
+              <span>Excel Export</span>
+              <span>Authentication</span>
+              <span>Authorization</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading text-center mb-5 scroll">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="contact-card mx-auto scroll">
+          <p class="text-light mb-5 text-center opacity-75">
+            Have a project in mind or want to collaborate? Reach out — I'd love to hear from you.
+          </p>
+          <div class="contact-links">
+            <a href="https://wa.me/+201556276618" class="contact-item" target="_blank">
+              <div class="contact-icon bg-success">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+201556276618</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-abdeltwab-7a9b88249/" class="contact-item" target="_blank">
+              <div class="contact-icon bg-primary">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Mohamed Abdeltwab</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://github.com/mohamedsayed62?tab=repositories" class="contact-item" target="_blank">
+              <div class="contact-icon contact-icon-dark">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">mohamedsayed62</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Designed & built by <span class="footer-name">Mohamed Abdeltwab</span>
+      </p>
     </footer>
 
     <script src="assets/js/handle-scroll.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
-
 </html>
