@@ -37,6 +37,12 @@ body {
   color: var(--text);
   overflow-x: hidden;
   line-height: 1.7;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 /* ═══════════════════════════════════════════
@@ -383,8 +389,15 @@ h1 {
   align-items: center;
   gap: 12px;
   text-align: center;
-  transition: var(--transition);
+  transition: opacity 0.7s ease, transform 0.7s ease, border-color 0.4s ease, background 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
   cursor: default;
+}
+
+.skill-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill-card:hover {
